@@ -1,0 +1,24 @@
+<h3>Delete Flight</h3>
+<div class="container-fluid mb-5">
+    <form id="deleteFlight" name="deleteFlight" >
+
+        <div class="form-group">
+            <label>Provider Code: </label>
+            <input type="text" name="pcode" placeholder="6E- or SG- or I5- or G8- or 9W- or AI-"  [(ngModel)]="providerCode" (blur)="validateProviderData()"><br />
+        </div>
+            
+       
+        <div class="form-group">
+            <label>Provider Type: </label>
+            <input type="text" name="ptype" placeholder="Domestic or International" [(ngModel)]="providerType" (blur)="validateProviderData()"><br />
+            
+        </div>
+
+        <div class="form-group">
+        <small class="text-danger" *ngIf="errorOnPage">{{message}}</small>
+        </div>
+
+        <button [disabled]="!isFormValid" (click)="deleteProvider()" >Delete Flight</button>
+
+    </form>
+</div>

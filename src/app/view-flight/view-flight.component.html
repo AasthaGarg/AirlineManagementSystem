@@ -1,0 +1,24 @@
+<h3>View AirlineProviders Information</h3>
+<div align="center">
+    
+    <div>
+      <label><h4>Filter By Provider Type:</h4></label>
+      <input 
+        (blur)="filterAirlineProviders($event)"
+        type="text"
+        placeholder="Provider Type">
+    </div>
+    <div>
+      <table>
+        <tr>
+          <th *ngFor="let header of headers">{{header}}</th>
+        </tr>
+        <tr *ngFor="let airline of filteredProviders">
+          <td>{{airline.providerCode}}</td>
+          <td>{{airline.providerName}}</td>
+          <td>{{airline.providerType}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
