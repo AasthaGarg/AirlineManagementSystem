@@ -11,4 +11,5 @@ Airline Management application is used to manage information related to various 
 
 ## Technologies mandatorily that needs to be used
 •	Languages and Frameworks	 :  HTML5, CSS3 & Angular<br/>
-•	Databases			 :  Angular In-Memory DB 
+•	Databases			 :  Angular In-Memory DB <br/>
+•	IDE			 :  Visual Studio Code
